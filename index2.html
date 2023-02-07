@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="navHeader">
+            <div class="nav logoPlaceholder">
+                <a href="index.html">
+                    <img src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/Logo_White.png?v=1666056335159"
+                        class="logo">
+                </a>
+            </div>
+            <div class="nav mainfunction">
+                <div id="searchPlaceholder" class="searchPlaceholder">
+                    <input type="text" class="searchbar" placeholder="Search here....">
+                </div>
+                <div class="main searchButton">
+                    <img class="mainIcon" onclick="searchShow()"
+                        src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/search.png?v=1666056334566">
+                </div>
+                <div class="main notificationButton">
+                    <img class="mainIcon dropDownMenuNotification" onclick="notificationShow()"
+                        src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/notification.png?v=1666056334578">
+                    <div id="dropDownNotification" class="dropDownContent">
+                        <div class="notificationTitle">
+                            Notification (3)
+                        </div>
+                        <div class="notificationBox">
+                            <img class="noticeIcon"
+                                src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Notice1.png">
+                            <div class="noticeContent">
+                                <p class="noticeMessage">Cat Lovers start a video group</p>
+                                <p class="noticeTime">24 mins ago</p>
+                            </div>
+                        </div>
+                        <div class="notificationBox">
+                            <img class="noticeIcon"
+                                src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Notice2.png">
+                            <div class="noticeContent">
+                                <p class="noticeMessage">Carter invites you to a new group: "D3"</p>
+                                <p class="noticeTime">56 mins ago</p>
+                            </div>
+                        </div>
+                        <div class="notificationBox">
+                            <img class="noticeIcon"
+                                src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Notice3.png">
+                            <div class="noticeContent">
+                                <p class="noticeMessage">Your group has reach 1,000 members</p>
+                                <p class="noticeTime">2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main groupButton">
+                    <img class="mainIcon dropDownMenuGroup" onclick="groupShow()"
+                        src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/group.png?v=1666056334693">
+                    <div id="dropDownGroup" class="dropDownContent2">
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/globalGroup.png"
+                                class="dropDownIcon">
+                            <p>Create Global Group</p>
+                        </div>
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/privateGroup.png"
+                                class="dropDownIcon">
+                            <p>Create Private Group</p>
+                        </div>
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/editGroup.png"
+                                class="dropDownIcon">
+                            <p>Manage Groups</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main profileButton">
+                    <img class="mainIcon dropDownMenuProfile" onclick="profileShow()"
+                        src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/profile.png?v=1666056334555">
+                    <div id="dropDownProfile" class="dropDownContent3">
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/account.png"
+                                class="dropDownIcon">
+                            <p>Account</p>
+                        </div>
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/profileSetting.png"
+                                class="dropDownIcon">
+                            <p>Edit Profile</p>
+                        </div>
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/changePassword.png"
+                                class="dropDownIcon">
+                            <p>Change Password</p>
+                        </div>
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/switchUser.png"
+                                class="dropDownIcon">
+                            <p>Switch User</p>
+                        </div>
+                        <div class="dropDownChoice">
+                            <img src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/signOut.png"
+                                class="dropDownIcon">
+                            <p>Sign Out</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="leftPanel">
+            <div class="actionPlaceholder">
+                <div class="left FriendsButtonOff">
+                    <img class="subIcon"
+                        src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/friends.png?v=1666056334523">
+                </div>
+                <div class="left chatButtonOn">
+                    <img class="subIcon"
+                        src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/chat.png?v=1666056334760">
+                </div>
+                <hr>
+                <div class="videoThumbnail">
+                    <a href="index2.html">
+                        <img class="left videoIcon"
+                            src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Icon-19.png">
+                    </a>
+                    <a href="index2.html">
+                        <img class="left videoIcon"
+                            src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Icon-20.png">
+                    </a>
+                    <a href="index2.html">
+                        <img class="left videoIcon"
+                            src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Icon-21.png">
+                    </a>
+                </div>
+            </div>
+            <div class="left settingButton">
+                <img class="subIcon"
+                    src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/setting.png?v=1666056334869">
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <!-- Replace this part with your MESSAGE coding -->
+            <img class="message"
+                src="https://cdn.glitch.global/ae87b326-1118-425b-8f02-2afc86ea5c4d/Message.png?v=1668013564894">
+            <!-- End -->
+        </div>
+        <div class="sideButton">
+            <img class="arrow"
+                src="https://cdn.glitch.global/68b35340-378d-47b9-bc0e-d51ed441ef07/Arrow.png?v=1666806285539">
+            <button class="sideSwitch" onclick="openBar()" id="onButton"></button>
+            <button class="sideSwitch" onclick="closeBar()" id="offButton"></button>
+        </div>
+        <div class="mainContent" id="mainContent">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pDq_qKkqGPY?autoplay=1&enablejsapi=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+        <script>
+            function openBar() {
+                document.getElementById("sidebar").style.display = "initial";
+                document.getElementById("onButton").style.display = "none";
+                document.getElementById("offButton").style.display = "initial";
+                document.getElementById("mainContent").style.width = "calc(100% - 285px)";
+            }
+
+            function closeBar() {
+                document.getElementById("sidebar").style.display = "none";
+                document.getElementById("onButton").style.display = "initial";
+                document.getElementById("offButton").style.display = "none";
+                document.getElementById("mainContent").style.width = "calc(100% - 85px)";
+            }
+
+            function previewShow() {
+                document.getElementById("preview").src = "https://cdn.glitch.global/2a3b6f29-74a1-4325-a5d3-24ed6819eae3/thumbnail_active.gif?v=1666749495234"
+            }
+
+            function previewHide() {
+                document.getElementById("preview").src = "https://cdn.glitch.global/2a3b6f29-74a1-4325-a5d3-24ed6819eae3/thumbnail_static.png?v=1666749667627"
+            }
+
+            function searchShow() {
+                if (document.getElementById("searchPlaceholder").style.display == "flex") {
+                    document.getElementById("searchPlaceholder").style.display = "none";
+                } else {
+                    document.getElementById("searchPlaceholder").style.display = "flex";
+                }
+            }
+
+            function notificationShow() {
+                document.getElementById("dropDownNotification").classList.toggle("show");
+            }
+
+            function groupShow() {
+                document.getElementById("dropDownGroup").classList.toggle("show");
+            }
+
+            function profileShow() {
+                document.getElementById("dropDownProfile").classList.toggle("show");
+            }
+
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropDownMenuNotification')) {
+                    var dropdowns = document.getElementsByClassName("dropDownContent");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+                if (!event.target.matches('.dropDownMenuGroup')) {
+                    var dropdowns = document.getElementsByClassName("dropDownContent2");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+                if (!event.target.matches('.dropDownMenuProfile')) {
+                    var dropdowns = document.getElementsByClassName("dropDownContent3");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+        </script>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video src="D:\Videos\Slapaway.mp4" type="video/mp4" controls></video>
+
+    <iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=pDq_qKkqGPY&list=LL&index=42&ab_channel=FranticBreezeFastFilmCompetition">
+</iframe>
+</body>
+</html> -->

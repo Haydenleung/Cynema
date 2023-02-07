@@ -1,81 +1,80 @@
-.navigation{
+.navigation {
     position: fixed;
-    Top:0px;
-    Left:0px;
+    Top: 0px;
+    Left: 0px;
     Height: 70px;
     width: 100%;
-    background-color:black;
+    background-color: black;
     z-index: 9999;
 }
 
-.navHeader{
+.navHeader {
     position: relative;
     width: 100%;
     height: 60px;
+
     margin-top: 5px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
-.logoPlaceholder{
+.logoPlaceholder {
     position: relative;
     Width: 200px;
     height: 50px;
     left: 10px;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.logo{
+.logo {
     Width: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.mainfunction{
+.mainfunction {
     Width: 60%;
-    height:50px;
+    height: 50px;
     right: 10px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: end;
 }
 
-.main{
-    position:relative;
+.main {
+    position: relative;
     width: 60px;
     height: 50px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.mainIcon{
-    height:80%;
-    object-fit:contain;
+.mainIcon {
+    height: 80%;
+    object-fit: contain;
 }
 
-.searchPlaceholder{
-    width:40%;
-    height:50px;
-    display:flex;
-    justify-content:center;
+.searchPlaceholder {
+    width: 40%;
+    height: 50px;
+    display: none;
+    justify-content: center;
     align-items: center;
 }
 
 @media (max-width: 767px) {
     .searchPlaceholder {
-      display: none;
+        display: none;
     }
 }
 
-.searchButton:hover + .searchbar{
-    display: none;
-}
 
-.searchbar{
+
+.searchbar {
     width: 90%;
     height: 10px;
     border-width: 1px solid;
@@ -83,137 +82,397 @@
     border-color: aliceblue;
     border-radius: 50px;
     background-color: transparent;
-    color:aliceblue;
+    color: aliceblue;
     padding: 10px;
     display: inline-block;
 }
 
+.searchButton:hover+.searchbar {
+    display: none;
+}
 
-.body{
+.body {
     position: absolute;
-    Top:70px;
-    Left:0px;
+    Top: 70px;
+    Left: 0px;
     Height: calc(100vh - 70px);
     width: 100%;
-    background-color:rgb(29, 29, 29);
+    background-color: rgb(29, 29, 29);
     display: flex;
     flex-direction: row;
 }
 
-.leftPanel{
+.leftPanel {
     position: relative;
-    Left:0px;
+    Left: 0px;
     Height: 100%;
     width: 70px;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.actionPanel{
-    display:flex;
-    flex-direction: column;
-    overflow:hidden;
-}
-
-.left{
-    position:relative;
-    width: 100%;
-    aspect-ratio: 1/1;
+.actionPanel {
     display: flex;
-    justify-content:center;
-    align-items: center;
-    object-fit:contain;
-}
-
-.subIcon{
-    width:70%;
-}
-
-hr{
-    width:70%;
-}
-
-.videoThumbnail{
-    display:flex;
-    Height: calc(100vh - 320px);
     flex-direction: column;
-    background-color: rgb(139, 139, 139);
-    width:100%;
     overflow: hidden;
 }
 
-.sidebar{
-    position:relative;
-    height:100%;
-    width:200px;
-    background-color: rgb(98, 89, 76);
+.left {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
 }
 
-.sideButton{    
-    height:100%;
+.subIcon {
+    width: 70%;
+}
+
+hr {
+    width: 70%;
+}
+
+.videoThumbnail {
+    display: flex;
+    Height: calc(100vh - 320px);
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.sidebar {
+    position: relative;
+    height: 100%;
+    width: 200px;
+    background-color: rgb(44, 44, 44);
+
+}
+
+.sideButton {
+    height: 100%;
     width: 15px;
     background-color: rgb(18, 18, 18);
     overflow: hidden;
 }
 
-.sideSwitch{
-    position:relative;
-    height:100%;
-    width:100%;
-    background-color: transparent;
-    border:none;
-}
-
-#onButton{
-    display:none;
-}
-
-.mainContent{
-    position:relative;
+.sideSwitch {
+    position: relative;
     height: 100%;
-    width: calc(100% - 335px);
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+#onButton {
+    display: none;
+}
+
+.mainContent {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 285px);
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-.content{
+.content {
     position: relative;
 }
 
-.tagPlaceholder{
-    min-height: 50px;
-    top:0px;
-    background-color: rgb(42, 42, 42);
+.tagPlaceholder {
+    min-height: 10px;
+    top: 0px;
+
 }
 
-.titleText{
+.titleText {
     min-height: 20px;
-    margin-top:10px;
+    margin-top: 10px;
     padding-left: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 10pt;
     color: aliceblue;
 }
 
-.videoContainer{
-    width:100%;
+.videoContainer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding:5px;
+    padding: 5px;
 }
 
-.video{
-    background-color: rgb(255, 255, 255);
-    min-width: 200px;
-    width:24%;
-    height:200px;
-    margin:5px;
+
+/*the margin makes the transparent gif overlap the satic thumbnail
+this technically breaks when scaled too much but could be solved by doing a separate one for each thumbnail div*/
+
+.gifContainer {
+    position: relative;
+    margin-top: -220px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.videoA {
+    aspect-ratio: 16 / 9;
+    min-width: 280px;
+    min-height: 158px;
+    max-width: 500px;
+    width: 24%;
+    margin: 5px;
     border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    aspect-ratio: 16 / 11;
+    min-width: 280px;
+    min-height: 158px;
+    max-width: 500px;
+    width: 24%;
+    margin: 5px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.video img {
+    background-color: rgb(255, 255, 255);
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.userIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.viewer {
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: -3px;
+}
+
+.UserA {
+    background-color: rgb(255, 193, 73);
+}
+
+.UserB {
+    background-color: rgb(73, 188, 255);
+}
+
+.UserC {
+    background-color: rgb(255, 73, 118);
+}
+
+
+.username {
+    position: relative;
+    left: 10px;
+    top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 10pt;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.videoIcon {
+    width: 80%;
+    margin: 10%;
+}
+
+.FriendsButtonOn {
+    background-color: rgb(44, 44, 44);
+}
+
+.chatButtonOn {
+    background-color: rgb(44, 44, 44);
+}
+
+.friendList {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.message {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 90%;
+}
+
+.arrow {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+.mainIcon:hover,
+.mainIcon:focus {
+    background-color: rgb(8, 8, 8);
+}
+
+
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: black;
+    min-width: 300px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropDownContent div {
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notificationTitle {
+    margin-left: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    font-size: 8pt;
+}
+
+.notificationBox {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.notificationBox:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.noticeIcon {
+    margin-left: 8px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticeContent {
+    height: 60px;
+    width: 240px;
+}
+
+.noticeMessage {
+    margin: 5px;
+    margin-top: 18px;
+    font-size: 8pt;
+    font-weight: 600;
+}
+
+.noticeTime {
+    min-width: 0px;
+    font-size: 7pt;
+    margin: 5px;
+}
+
+.dropDownContent2 {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: black;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropDownContent2 div {
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropDownContent3 {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: black;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropDownContent3 div {
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropDownChoice {
+    height: 50px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
+
+.dropDownChoice p {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    font-size: 8pt;
+    font-weight: 600;
+}
+
+.dropDownIcon {
+    margin: 5px;
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+
+.dropDownChoice:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
 }
